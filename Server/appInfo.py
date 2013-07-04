@@ -4,10 +4,7 @@
 # or software development,  Cisco assumes no liability for or support obligations related to the use of the script 
 # examples or any results obtained using or referring to the script examples.
 
-#
-# Contact: sakommu@cisco.com
-#
-#
+
 from socket import *
 import commands
 

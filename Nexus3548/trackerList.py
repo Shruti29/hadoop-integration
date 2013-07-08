@@ -7,6 +7,8 @@
 
 import socket
 
+HOST = '172.25.187.60' # The remote host
+PORT = 34567 # The same port as used by the server
 appSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 appSocket.connect((HOST, PORT))
 appSocket.sendall("101")

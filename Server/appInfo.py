@@ -54,6 +54,19 @@ while True:
                     appData = appData + eachJob.split()[3] + ","
                     appData = appData + eachJob.split()[4] + "\n"
 
+        
+# The user will need to create a getMACS.sh script which will need to include the following code:
+# ------------------------------------------------------------------------------------------------
+# #!/bin/bash
+#
+# Contact: sakommu@cisco.com
+#
+
+# HOSTNAME=`hostname`
+# MAC=`/sbin/ifconfig eth2 | grep HW | cut -b39-55  | sed -e 's/://g' -e 's/\(.*\)/\L\1/'`
+# echo "$HOSTNAME,$MAC"
+
+        
         elif ( data == 101 ):
             appData = commands.getoutput("getMACs.sh")
 

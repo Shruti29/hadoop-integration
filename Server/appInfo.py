@@ -9,7 +9,7 @@ from socket import *
 import commands
 
 # Listener port #
-PORT = 56789
+PORT = 34567
 
 # Socket setup
 appServerSocket = socket(AF_INET, SOCK_STREAM)
